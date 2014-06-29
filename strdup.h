@@ -18,7 +18,6 @@
  * copy of `str`, or `NULL` on failure.
  */
 
-
 char *
 strdup(const char *str);
 
