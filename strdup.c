@@ -14,10 +14,11 @@
 
 char *
 strdup(const char *str) {
-  int len = strlen(str) + 1;
-  char *buf = malloc(len);
-  if (buf) memcpy(buf, str, len);
-  return buf;
+    if (!str) return NULL;
+    int len = strlen(str) + 1;
+    char *buf = malloc(len);
+    if (buf) memcpy(buf, str, len);
+    return buf;
 }
 
 #endif /* HAVE_STRDUP */
