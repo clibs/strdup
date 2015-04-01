@@ -12,5 +12,8 @@ main(void) {
   assert(0 == strcmp("hello world", copy));
   assert(11 == strlen(copy));
   free(copy);
+
+  assert(NULL == strdup(NULL));
+
   return 0;
 }
