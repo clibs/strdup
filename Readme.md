@@ -5,4 +5,4 @@
 
 ## License
 
-  MIT
+  Expat License ("MIT License")
