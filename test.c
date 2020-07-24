@@ -1,4 +1,3 @@
-
 #include <assert.h>
 #include <string.h>
 #include <stdlib.h>
@@ -13,7 +12,7 @@ main(void) {
   assert(11 == strlen(copy));
   free(copy);
 
-  assert(NULL == strdup(NULL));
+  assert(0 == strdup(0));
 
   return 0;
 }
